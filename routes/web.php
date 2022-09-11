@@ -10,42 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('pages.home');
-});
-Route::get('/about', function () {
-    return view('pages.about');
-});
-Route::get('/services', function () {
-    return view('pages.services');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-Route::get('/careers', function () {
-    return view('pages.careers');
-});
-Route::get('/apply_online', function () {
-    return view('pages.apply_online');
-});
-Route::get('/apply_online2', function () {
-    return view('pages.apply_online2');
-});
-Route::get('/apply_online3', function () {
-    return view('pages.apply_online3');
-});
-Route::get('/apply_online4', function () {
-    return view('pages.apply_online4');
-});
-Route::get('/apply_online5', function () {
-    return view('pages.apply_online5');
-});
-Route::get('/apply_online6', function () {
-    return view('pages.apply_online6');
-});
-
-
+Route::get('/home', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+Route::get('/contact', 'PagesController@contact');
+Route::get('/careers', 'PagesController@careers');
+Route::get('/apply_online', 'PagesController@apply_online');
+Route::get('/apply_online2', 'PagesController@apply_online2');
+Route::get('/apply_online3', 'PagesController@apply_online3');
+Route::get('/apply_online4', 'PagesController@apply_online4');
+Route::get('/apply_online5', 'PagesController@apply_online5');
+Route::get('/apply_online6', 'PagesController@apply_online6');
 
 //Post Data RouteServiceProvider
 Route::post('/apply_online', ['as' => 'stage1.store', 'uses' => 'ApplicationFormController@application_stage_1']);
