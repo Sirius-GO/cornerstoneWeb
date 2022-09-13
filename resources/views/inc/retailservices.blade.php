@@ -13,7 +13,7 @@
                     <li>Store Development / Seasonal Support</li>
                     <li>Specialist Roles</li>
                     <li>Tactical Merchandising</li>
-                    <li>Click & Collect Support</li>
+                    <li>Click &amp; Collect Support</li>
                     <li>Stock Audits / Management</li>
                     <li>Planogram Compliance</li>
                     <li>Product Launches</li>
