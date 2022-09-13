@@ -1,0 +1,94 @@
+html, body {
+    background-color: #222;
+    color: #fff;
+    font-family: tahoma, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.carousel-logo{
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    z-index: 20;
+}
+.jumbo-logo{
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    z-index: 20;
+}
+@media only screen and (max-width: 3000px) {
+  .cTitle{
+    -webkit-text-stroke: 1px #0464c7;
+    font-weight: 900;
+    color: #111;
+  }
+  .cBody{
+    -webkit-text-stroke: 1px #0464c7;
+    font-weight: 900;
+    font-size: 20px;
+    color: #111;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cTitle{
+    -webkit-text-stroke: 1px #0464c7;
+    font-weight: 900;
+    color: #111;
+    font-size: 2em;
+  }
+  .cBody{
+    -webkit-text-stroke: 1px #0464c7;
+    font-weight: 900;
+    font-size: 17px;
+    color: #111;
+  }
+}
+.message_bar{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 65px;
+    z-index: 99;
+
+    animation:message_bar 5s 1;
+    -webkit-animation:message_bar 5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:5.5s;
+    -webkit-animation-delay:5.5s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+
+  }
+
+  @keyframes message_bar{
+        from {opacity :1;}
+        to {opacity :0;}
+  }
+
+  @-webkit-keyframes message_bar{
+        from {opacity :1;}
+        to {opacity :0;}
+  }
+
+  #cookie-law {
+    position: absolute;
+    top: 140px;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    max-width: 90%;
+    background:#eee;
+    border: solid 2px;
+    text-align: center;
+  }
+
+  #cookie-law p {
+    padding:10px;
+    font-size:15px !important;
+    font-weight:bold;
+    margin: auto;
+    color:#333;
+  }
