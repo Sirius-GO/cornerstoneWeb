@@ -26,7 +26,7 @@ Route::get('/apply_online4', 'PagesController@apply_online4');
 Route::get('/apply_online5', 'PagesController@apply_online5');
 Route::get('/apply_online6', 'PagesController@apply_online6');
 
-//Post Data RouteServiceProvider
+//Post Data 
 Route::post('/apply_online', ['as' => 'stage1.store', 'uses' => 'ApplicationFormController@application_stage_1']);
 Route::post('/apply_online2', ['as' => 'stage2.store', 'uses' => 'ApplicationFormController@application_stage_2']);
 Route::post('/apply_online3', ['as' => 'stage3.store', 'uses' => 'ApplicationFormController@application_stage_3']);
